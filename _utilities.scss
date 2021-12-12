@@ -5,14 +5,14 @@
   padding: 0.5em 2em;
 }
 
-/* Columns and Rows */
-.row {
+.container-flex {
   display: flex;
-  justify-content: space-between;
-}
+  align-items: center;
+  flex-direction: column;
 
-.row > div {
-  flex: 1;
+  & > * {
+    flex: 1;
+  }
 }
 
 /* Card */
@@ -23,10 +23,11 @@
 
 /* Responsve */
 
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 768px) {
   /* For mobile phones: */
-  .row {
-    display: flex;
-    flex-direction: column;
+  .container-flex {
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: stretch;
   }
 }
