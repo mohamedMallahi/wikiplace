@@ -1,0 +1,32 @@
+/* Layout */
+.container {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 0.5em 2em;
+}
+
+/* Columns and Rows */
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.row > div {
+  flex: 1;
+}
+
+/* Card */
+.card {
+  /* border: 1px solid #333; */
+  padding: 0.5em;
+}
+
+/* Responsve */
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .row {
+    display: flex;
+    flex-direction: column;
+  }
+}
